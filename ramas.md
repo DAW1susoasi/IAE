@@ -11,7 +11,7 @@
 - asirpapa clona el repositorio en local:
 `$ git clone` <https://github.com/asirpapa/colaborativo.git>
 ![](./images/21.png)
-- asirpapa añade los archivos index.html y styles.css: hjhijhiuhiuhiuhiuhui 
+- asirpapa añade los archivos index.html y styles.css: hjhijhiuhiuhiuhiuhui  jhjkhjkhkjhkj hkjhjk 
 ![](./images/22.png)
 - asirpapa añade los nuevos archivos al repositorio local y los sincroniza con el repositorio remoto:
 ```bash
