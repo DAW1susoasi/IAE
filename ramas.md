@@ -108,5 +108,5 @@ $ git log
 ```
 ![](/images/82.png)
 ![](/images/83.png)
-Moraleja: antes de que se produzca el error (antes de hacer merge) hay que hacer **pull** en la rama principal del repositorio local para que se actualice (internamente hace un merge del repositorio local con el remoto)..
+Moraleja: antes de que se produzca el error (antes de hacer merge) hay que hacer **pull** en la rama principal del repositorio local para que se actualice (internamente hace un merge del repositorio local con el remoto).  
 [Enlace a otras pruebas](/archivos/otro.md)
