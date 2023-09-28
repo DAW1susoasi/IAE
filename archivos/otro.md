@@ -1,11 +1,11 @@
 # Esto es otro archivo
 ***
-<https://aules.edu.gva.es/fp/login/index.php>  
-[Otra forma](https://aules.edu.gva.es/fp/login/index.php)
 ## Esto es un subtítulo  
+<https://aules.edu.gva.es/fp/login/index.php>  
+[Otra forma](https://aules.edu.gva.es/fp/login/index.php)  
 **Texto en negrita**  
 *Texto en cursiva*  
-<u>Texto subrayado</u>  
+<u>Texto subrayado</u>
 | Encabezado1 | Encabezado2 |
 | --------- | --------- |
 | Header | Title |

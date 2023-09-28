@@ -11,8 +11,7 @@
 - asirpapa clona el repositorio en local:
 `$ git clone https://github.com/asirpapa/colaborativo.git`
 ![](./images/21.png)
-- asirpapa añade los archivos index.html y styles.css: 
-
+- asirpapa añade los archivos index.html y styles.css:  
   ![](/images/22.png)
 - asirpapa añade los nuevos archivos al repositorio local y los sincroniza con el repositorio remoto:
 ```bash
@@ -20,8 +19,7 @@ $ git add .
 $ git commit -m "Nuevos archivos web"
 $ git push
 ```
-![](/images/23.png)
-
+![](/images/23.png)  
 - DAW1susoasi clona el repositorio con los archivos web iniciales sobre los que luego cada uno creará su rama y modificará lo que tenga que modificar:
 `$ git clone https://github.com/asirpapa/colaborativo.git`
 ![](/images/31.png)
