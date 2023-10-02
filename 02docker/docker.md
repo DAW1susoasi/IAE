@@ -56,6 +56,6 @@ $ docker run -d --name miNextcloud -p 8080:80 \
   -e SQLITE_DATABASE=dbSQLITE \
   nextcloud
   ```
-![](./img/12.jpg)  
+![](./img/12.png)  
 
 
