@@ -23,8 +23,11 @@
 Si ejecutamos `# exit` en la terminal, se cerrará la sesión de la terminal dentro del contenedor y éste pasará al estado de detenido.
 Si no queremos que esto ocurra, saldremos de la terminal con `Ctrl + P` seguido de `Ctrl + Q`  
 - Vuelve a iniciar el contenedor de forma interactiva. ¿Sigue instalado el nano?.  
+No falla:  
 `$ docker start miUbuntu`  
 `$ docker exec -it miUbuntu bash`  
+Podría fallar:  
+`$ docker start -ai miUbuntu` enlazará con la terminal del contenedor siempre y cuando el comando ejecutado al arranque del contenedor sea bash    
 ![](./img/07.jpg)  
 `# nano` y comprobamos que SÍ está instalado  
 - Sal del contenedor, y bórralo.  
@@ -46,11 +49,11 @@ No
 `$ docker logs miNginx`  
 ![](./img/11.jpg)  
 3. Crea un contenedor con la aplicación **Nextcloud**, mirando la documentación en docker Hub, para que el nombre de la base de datos sqlite que va a utilizar sea *dbSQLITE*.  
-Para la persistencia de datos creo/utilizo el volumen *vNextcloud* y para el nombre de la base de datos utilizo la variable de entorno *SQLITE_DATABASE*  (para cositas de más embergadura ya está Dockerfile, Docker Compose, Kubernetes).
+Para la persistencia de datos creo/utilizo el volumen *vNextcloud* y para el nombre de la base de datos utilizo la variable de entorno *SQLITE_DATABASE*  (para cositas de más embergadura ya está Dockerfile, Docker Compose, Kubernetes).  
 ```bash
 $ docker run -d --name miNextcloud -p 8080:80 \
   -v vNextcloud:/var/www/html \
-  -e SQLITE_DATABASE=/var/www/html/data/dbSQLITE.db \
+  -e SQLITE_DATABASE=dbSQLITE \
   nextcloud
   ```
 ![](./img/12.jpg)  
