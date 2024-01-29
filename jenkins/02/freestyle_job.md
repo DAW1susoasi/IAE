@@ -40,4 +40,4 @@ Creamos el job **02** de tipo estilo libre.
 ![](./img/Captura%20de%20pantalla_2024-01-21_14-19-35.png)  
 5. Tras guardar el job y ponerlo en marcha podemos comprobar que la carpeta crud del repositorio se descargó al workspace 02 y se copió en la carpeta www del servidor Apache.  
 No dió error al copiar gracias al volumen /var/run/docker.sock:/var/run/docker.sock, o al menos eso creo.  
-![](./img/Captura%20de%20pantalla_2024-01-21_14-29-26.png)  
+![](./img/2024-01-29_183511.png)  
