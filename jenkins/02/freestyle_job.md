@@ -11,17 +11,21 @@ version: "3"
 
 services:
   jenkins:
+    # El usuario jenkins no tiene permiso para copiar
     user: root
     image: jenkins/jenkins:lts
     container_name: jenkins
     ports:
       - "8080:8080"
     volumes:
+      # Persistencia
       - ./jenkins_home:/var/jenkins_home
+      # Para poder leer el archivo /etc/passwd del anfitrión
       - /etc/passwd:/data/passwd:ro
+      # Para poder copiar en la carpeta ../docker-lamp/www de prácticas anteriores
       - ../docker-lamp/www:/www
-      - /usr/local/bin/docker:/usr/bin/docker
-      - /var/run/docker.sock:/var/run/docker.sock
+      #- /usr/local/bin/docker:/usr/bin/docker
+      #- /var/run/docker.sock:/var/run/docker.sock
     networks:
       - mynet
     
@@ -39,5 +43,4 @@ Creamos el job **02** de tipo estilo libre.
 4. Añadimos un Build Step de tipo Ejecutar linea de comandos (shell) e introducimos el código para copiar el repositorio descargado a la carpeta www del servidor Apache.   
 ![](./img/Captura%20de%20pantalla_2024-01-21_14-19-35.png)  
 5. Tras guardar el job y ponerlo en marcha podemos comprobar que la carpeta crud del repositorio se descargó al workspace 02 y se copió en la carpeta www del servidor Apache.  
-No dió error al copiar gracias al volumen /var/run/docker.sock:/var/run/docker.sock, o al menos eso creo.  
 ![](./img/2024-01-29_183511.png)  
